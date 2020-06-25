@@ -1,6 +1,6 @@
 # hadolint ignore=DL3007
-FROM myoung34/github-runner-base:latest
-LABEL maintainer="myoung34@my.apsu.edu"
+FROM gmri/github-runner-base:latest
+LABEL maintainer="sdresser@gmri.org"
 
 ARG GH_RUNNER_VERSION="2.267.0"
 ARG TARGETPLATFORM

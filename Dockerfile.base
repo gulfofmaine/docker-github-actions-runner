@@ -1,5 +1,5 @@
 FROM ubuntu:eoan
-LABEL maintainer="myoung34@my.apsu.edu"
+LABEL maintainer="sdresser@gmri.org"
 
 ARG GIT_VERSION="2.26.2"
 
@@ -8,7 +8,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 # hadolint ignore=DL3003
 RUN apt-get update && \
   apt-get install -y --no-install-recommends \
-    awscli \
+    # awscli \
+    dnsutils\
     curl \
     tar \
     apt-transport-https \
